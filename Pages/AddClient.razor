@@ -1,0 +1,164 @@
+﻿@page "/client"
+@inherits ClientInformationBase.ClientInformationBase
+@using Fitness.Entities
+@using InstructorInformationBase
+@using Fitness.Data
+
+
+<h3>Introduceti datele clientului: </h3>
+
+<EditForm Model="@ClientInformation" OnValidSubmit="SaveClient">
+	<DataAnnotationsValidator/>
+<div class="row content">
+	<div class="col-md-2">
+		First Name
+	</div>
+
+	<div class=col-md-4>
+		<InputText class="form-control" @bind-Value="@ClientInformation.FirstName" />
+		<ValidationMessage For="() => ClientInformation.FirstName"/>
+	</div>
+</div>
+
+<div class="row content">
+	<div class="col-md-2">
+		Last Name
+	</div>
+
+	<div class=col-md-4>
+		<InputText class="form-control" @bind-Value="@ClientInformation.LastName" />
+		<ValidationMessage For="() => ClientInformation.LastName"/>
+	</div>
+</div>
+
+	<div class="row content">
+		<div class="col-md-2">
+			Email
+		</div>
+
+		<div class=col-md-4>
+			<InputText class="form-control" @bind-Value="@ClientInformation.Email" />
+			<ValidationMessage For="() => ClientInformation.Email"/>
+		</div>
+	</div>
+
+	<div class="row content">
+		<div class="col-md-2">
+			Phone Number
+		</div>
+
+		<div class=col-md-4>
+			<InputText class="form-control" @bind-Value="ClientInformation.PhoneNumber" />
+			<ValidationMessage For="() => ClientInformation.PhoneNumber"/>
+		</div>
+	</div>
+
+	<br>
+	<h5>Selectati categoria: </h5>
+
+	<div class="col-md-2">
+		<select id="Cat" style="width:170px" @bind="ClientInformation.Categories">
+			<option value="@Categories.Adult">@Categories.Adult</option>
+			<option value="@Categories.Elev">@Categories.Elev</option>
+			<option value="@Categories.Student">@Categories.Student</option>
+		</select>
+	</div>
+	<br>
+
+	<h5>Precizati numarul de ore/saptamana dorit:</h5>
+	<p><span style="color: red">(Numarul de ore trebuie sa fie intre 1 - 5)</span></p>
+
+
+	<div class=col-md-4>
+		<input class="form-control" style="width:50px" @bind="ClientInformation.Hours" />
+
+		@if (ClientInformation.Hours > 5)
+		{
+			<SfMessage Variant="MessageVariant.Filled" Severity="MessageSeverity.Error">Ati depasit numarul de ore!</SfMessage>
+		}
+
+	</div>
+
+	<br>
+
+	<h5>Lista instructori disponibili: </h5>
+
+	<select style="width:250px" @bind="ClientInformation.InstructorID">
+		<option selected disabled="true">Lista instructori</option>
+		@foreach (var instructor in instructors)
+		{
+			if (InstructorInformationBase.CheckInstructorHours() == true && instructor.Hours < 20 && ClientInformation.Hours <= 5)
+			{
+				<option value="@instructor.InstructorId">@instructor.LastName @instructor.FirstName -> Ore disponibile: @(20 - instructor.Hours)</option>
+			}
+		}
+	</select>
+
+
+	<div class="row content">
+
+		<div class=col-md-4>
+
+			@if (InstructorInformationBase.CheckInstructorHours() == false)
+			{
+				<SfMessage Variant="MessageVariant.Filled" Severity="MessageSeverity.Error" ShowCloseIcon=true>Momentan nu sunt instructori disponibili!</SfMessage>
+
+				<input type="button" value="Adauga Posibil Client" @onclick="() => SavePotentialClient()">
+
+				if(ClientInformationBase.ClientInformationBase.Saved == true)
+				{
+					<SfMessage Variant="MessageVariant.Filled" Severity="MessageSeverity.Success" ShowCloseIcon=true>Viitor client adaugat cu succes!</SfMessage>
+					ClientInformationBase.ClientInformationBase.Saved = false;
+				}
+			}
+			else if(ClientInformation.Hours <= 5)
+			{
+				<input type="button" value="Adauga Abonament" @onclick="() => SaveClient()" />
+			}
+
+			@if (FitnessDateAcces.HoursPassed == false && FitnessDateAcces.ClientSaved == true && FitnessDateAcces.DisplayMessage == false)
+			{
+				<SfMessage Variant="MessageVariant.Filled" Severity="MessageSeverity.Success" ShowCloseIcon=true>Client adaugat cu succes!</SfMessage>
+				FitnessDateAcces.ClientSaved = false;
+			}
+			else if (FitnessDateAcces.HoursPassed == true)
+			{
+				<SfMessage Variant="MessageVariant.Filled" Severity="MessageSeverity.Error">Pentru acest instructor se depaseste numarul maxim de ore!</SfMessage>
+				FitnessDateAcces.HoursPassed = false;
+			}
+
+			@if (FitnessDateAcces.DisplayMessage == true || ClientInformation.Hours > 5)
+			{
+				<SfMessage Variant="MessageVariant.Filled" Severity="MessageSeverity.Error" ShowCloseIcon=true>Nu ati introdus datele corecte!</SfMessage>   
+				FitnessDateAcces.DisplayMessage = false;
+				FitnessDateAcces.ClientSaved = false;
+			}
+
+		</div>
+	</div>
+</EditForm>
+
+<style>
+	.e-message{
+		width: 250px;
+		color: green;
+	}
+</style>
+
+@code{
+
+	bool selected = false;
+	int? instructorSelected = 0;
+
+	DataAcces data = new DataAcces();
+
+	FitnessDateAcces acces = new FitnessDateAcces();
+
+	private List<InstructorInformation> instructors;
+
+	protected override void OnInitialized()
+	{
+		instructors = data.GetInstructors();
+	}
+
+}

@@ -1,0 +1,58 @@
+﻿@page "/potentialclients"
+@using Fitness.Entities
+@using Fitness.Data
+@using InstructorInformationBase
+@inherits ClientInformationBase.ClientInformationBase
+
+<h3>Lista cursantilor care nu au gasit loc la nici un instructor:</h3>
+
+<br/>
+<div class="row">
+	<div class="col-10">
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Last Name</th>
+					<th>First Name</th>
+					<th>Phone Number</th>
+					<th>Email</th>
+					<th>Category</th>
+					<th>Hours</th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach (var client in clients)
+				{
+					if (client.InstructorID == 0)
+					{
+						<tr>
+							<td>@client.LastName</td>
+							<td>@client.FirstName</td>
+							<td>@client.PhoneNumber</td>
+							<td>@client.Email</td>
+							<td>@client.CategoryString</td>
+							<td>@client.Hours</td>
+							<content>
+								<input type="button" style="display:inline-block" value="Verifica Instructori Si Adauga Client" @onclick="() => MoveClient(client)">
+							</content>
+						</tr>
+						
+					}
+				}
+			</tbody>
+		</table>
+	</div>
+</div>
+
+@code {
+
+	DataAcces data = new DataAcces();
+	FitnessGym instructorData = new FitnessGym();
+
+	private List<ClientInformation> clients;
+
+	protected override void OnInitialized()
+	{
+		clients = data.GetClients();
+	}
+}

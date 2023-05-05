@@ -1,0 +1,77 @@
+﻿@page "/instructor"
+@using Fitness.Entities
+@inherits InstructorInformationBase.InstructorInformationBase
+
+<h3>Instructor list</h3>
+
+<br />
+<div class="row">
+	<div class="col-10">
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Last Name</th>
+					<th>First Name</th>
+					<th>Instructor ID</th>
+					<th>Hours</th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach(var instructor in instructors)
+				{
+				<tr>
+					<td>@instructor.LastName</td>
+					<td>@instructor.FirstName</td>
+					<td>@instructor.InstructorId</td>
+					<td>@instructor.Hours</td>
+				</tr>
+				}
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<br/>
+
+<p>Introduceti ID-ul instructorului pe care doriti sa il stergeti: </p>
+
+<div class=col-md-4>
+	<input class="form-control" style="width:80px" @bind="InstructorInformation.InstructorId"/>
+</div>
+<br/>
+<div class=col-md-4>
+	<input type="button" value="Sterge Instructor" @onclick="() => RemoveInstructor()"/>
+
+	@if(InstructorInformationBase.InstructorInformationBase.Removed == false && InstructorInformation.InstructorId == null)
+	{
+		<SfMessage Variant="MessageVariant.Filled" Severity="MessageSeverity.Error" ShowCloseIcon=true>Nu ati introdus nici un id!</SfMessage>
+		InstructorInformationBase.InstructorInformationBase.Removed = true;
+	}
+
+	@if (instructors.Any(x => x.InstructorId == InstructorInformation.InstructorId && x.InstructorId != null))
+	{
+		<SfMessage Variant="MessageVariant.Filled" Severity="MessageSeverity.Success" ShowCloseIcon=true>Instructorul selectat a fost sters!</SfMessage>
+		InstructorInformationBase.InstructorInformationBase.Removed = true;
+	}
+	else if (instructors.Any(x => x.InstructorId != InstructorInformation.InstructorId) && !InstructorInformationBase.InstructorInformationBase.Removed)
+	{
+		<SfMessage Variant="MessageVariant.Filled" Severity="MessageSeverity.Error" ShowCloseIcon=true>ID necorespunzator!</SfMessage>
+		InstructorInformationBase.InstructorInformationBase.Removed = true;
+	}
+
+</div>
+
+
+@code {
+
+	DataAcces data = new DataAcces();
+
+	private List<InstructorInformation> instructors;
+
+	protected override void OnInitialized()
+	{
+		instructors = data.GetInstructors();
+	}
+
+}
+

@@ -1,0 +1,34 @@
+﻿@page "/exit"
+@inject NavigationManager NavigationManager
+
+<div style="display: flex; justify-content: center; align-items: center; height: 65vh; flex-direction: column;">
+	<div style="margin-bottom: 20px;">
+
+		<h2 style="text-align: center;">Doriti sa iesiti din aplicatie?</h2>
+
+	</div>
+
+	<div style="display: flex; justify-content: center; align-items: center;">
+
+	<button style="color: blue; margin-right: 50px;" @onclick="CloseApplication">DA</button>
+	<button style="color: blue" @onclick="NotClosingApplication">NU</button>
+
+    </div>
+</div>
+
+
+
+
+@code {
+
+	private void CloseApplication()
+	{
+		NavigationManager.NavigateTo("about: blank", forceLoad: true);
+	}
+
+	private void NotClosingApplication()
+	{
+		NavigationManager.NavigateTo("/");
+	}
+
+}

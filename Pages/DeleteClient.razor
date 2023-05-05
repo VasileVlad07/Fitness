@@ -1,0 +1,119 @@
+﻿@page "/deleteclient"
+@using Fitness.Entities
+@using Fitness.Data
+@using Microsoft.Data.SqlClient
+@inherits ClientInformationBase.ClientInformationBase
+
+<h3>Client list</h3>
+
+<br />
+<div class="row">
+	<div class="col-10">
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Last Name</th>
+					<th>First Name</th>
+					<th>Phone Number</th>
+					<th>Email</th>
+					<th>Category</th>
+					<th>Hours</th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach(var client in clients)
+				{
+				<tr>
+					<td>@client.LastName</td>
+					<td>@client.FirstName</td>
+					<td>@client.PhoneNumber</td>
+					<td>@client.Email</td>
+					<td>@client.CategoryString</td>
+					<td>@client.Hours</td>
+				</tr>
+				}
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<p>Introduceti numele clientului pe care doriti sa il stergeti:</p>
+
+<div class=col-md-4>
+
+	<input class="form-control" style="width:250px" @bind="clientName"/>
+
+</div>
+
+<br>
+
+<div class=col-md-4>
+	<input type="button" value="Sterge Client" @onclick="() => DeletClientAsync()">
+
+		@if(clients.Any(x => x.FullName != clientName) && !clientRemoved)
+		{
+			<SfMessage Variant="MessageVariant.Filled" Severity="MessageSeverity.Error" ShowCloseIcon=true>Numele introdus nu este corect!</SfMessage>
+			clientRemoved = true;
+		}
+		else if (clients.Any(x => x.FullName == clientName))
+		{
+			<SfMessage Variant="MessageVariant.Filled" Severity="MessageSeverity.Success" ShowCloseIcon=true>Clientul a fost sters!</SfMessage>
+			//clientRemoved = true;
+		}
+</div>
+
+<style>
+	.e-message {
+		width: 280px;
+	}
+</style>
+
+@code {
+
+	DataAcces data = new DataAcces();
+	FitnessDateAcces acces = new FitnessDateAcces();
+
+	FitnessGym instructData = new FitnessGym();
+
+	string? clientName;
+	bool clientRemoved = true;
+
+	private List<ClientInformation> clients;
+
+	protected override void OnInitialized()
+	{
+		clients = data.GetClients();
+	}
+
+	public async Task DeletClientAsync()
+	{
+		ClientEntity clientData = new ClientEntity();
+
+		foreach (var client in clientData.ClientInformations)
+		{
+			if (client.FullName == clientName)
+			{
+				foreach (var instructor in instructData.InstructorInformations)
+				{
+					if (client.InstructorID == instructor.InstructorId)
+					{
+						instructor.Hours -= client.Hours;
+						clientData.ClientInformations.Remove(client);
+						clientRemoved = true;
+					}
+				}
+			}
+			else
+			{
+				clientRemoved = false;
+			}
+			
+		}
+		instructData.SaveChanges();
+		await clientData.SaveChangesAsync();
+		OnInitialized();
+
+		StateHasChanged();
+	}
+
+}

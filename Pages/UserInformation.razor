@@ -1,0 +1,93 @@
+﻿@page "/userinformation"
+
+@inherits InstructorInformationBase.InstructorInformationBase
+
+<EditForm Model="@InstructorInformation" OnValidSubmit="SaveInstructorInformation">
+	<DataAnnotationsValidator/>
+<div class="row content">
+	<div class="col-md-2">
+		Last Name
+	</div>
+
+	<div class=col-md-4>
+		 <InputText class="form-control" @bind-Value="@InstructorInformation.LastName"/>
+		 <ValidationMessage For="() => InstructorInformation.LastName"/>
+	</div>
+
+</div>
+
+
+<div class="row content">
+	<div class="col-md-2">
+		First Name
+	</div>
+
+	<div class=col-md-4>
+		<InputText class="form-control" @bind-Value="@InstructorInformation.FirstName" />
+		<ValidationMessage For="() => InstructorInformation.FirstName" />
+	</div>
+
+</div>
+
+<div class="row content">
+	<div class="col-md-2">
+		InstructorID
+	</div>
+
+	<div class=col-md-4>
+		<input class="form-control" @bind="InstructorInformation.InstructorId"/>  
+	</div> 
+
+</div>
+
+<div class="row content">
+	<div class="col-md-2">
+
+	</div>
+
+	<div class=col-md-4>
+		<input type="button" value="ID GENERATOR" @onclick="() => GenerateID()" />
+
+		@if(string.IsNullOrEmpty(InstructorInformation.FirstName) || string.IsNullOrEmpty(InstructorInformation.LastName) || InstructorInformation.FirstName.Length < 2 && InstructorInformation.LastName.Length < 2)
+		{
+			if(InstructorInformationBase.InstructorInformationBase.IdGenerator == true)
+			{
+					<SfMessage Variant="MessageVariant.Filled" Severity="MessageSeverity.Error" ShowCloseIcon=true>Nu s-a putut genera un id!</SfMessage>
+					InstructorInformationBase.InstructorInformationBase.IdGenerator = false;
+			}
+		}
+		else
+		{
+			InstructorInformationBase.InstructorInformationBase.IdGenerator = false;
+		}
+	</div>
+
+</div>
+
+<div class="row content">
+	<div class="col-md-2">
+	</div>
+
+	<div class=col-md-4>
+
+		<input type="button" value="SAVE" @onclick="() => SaveInstructorInformation()"/>
+
+		@if(InstructorInformationBase.InstructorInformationBase.SavedAttempted == false)
+		{
+			<SfMessage Variant="MessageVariant.Filled" Severity="MessageSeverity.Error" ShowCloseIcon=true>Nu s-a putut salva! Verificati datele introduse!</SfMessage>
+			InstructorInformationBase.InstructorInformationBase.SavedAttempted = true;
+		}
+		else if (InstructorInformationBase.InstructorInformationBase.Saved == true)
+		{
+			<SfMessage Variant="MessageVariant.Filled" Severity="MessageSeverity.Success" ShowCloseIcon=true>Instructorul a fost salvat cu succes!</SfMessage>
+			InstructorInformationBase.InstructorInformationBase.Saved = false;
+		}
+
+	</div>
+
+</div>
+
+</EditForm>
+
+
+

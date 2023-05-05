@@ -1,0 +1,80 @@
+﻿@page "/instructorhours"
+@inherits ClientInformationBase.ClientInformationBase 
+@using Fitness.Entities
+
+
+<h3>Selectati un instructor din lista:</h3>
+
+<select style="width:350px" @bind="ClientInformation.InstructorID">  
+	<option selected disabled="true">Lista instructori</option>
+	@foreach (var instructor in instructors)
+	{
+		<option value="@instructor.InstructorId">@instructor.LastName @instructor.FirstName - @instructor.InstructorId</option>
+	}
+</select>
+
+<div class="row content">
+
+	<div class=col-md-4>
+		<input type="button" value="Afisaza Clienti Instructor Selectat" @onclick="() => GetClientInformationAsync()" />
+
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Nume client</th>
+					<th>Prenume client</th>
+					<th>Ore client</th>
+					<th>Categorie client</th>
+				</tr>
+			</thead>
+			<tbody>
+				@if(clients == null)
+				{
+					// Afisam un mesaj cum ca nu s-a selectat nici un client. - trebuie implementat
+				}
+				else
+				{
+					foreach (var client in clients)
+					{
+						if(client.InstructorID == ClientInformation.InstructorID)
+						{
+							<tr style="background-color:#D6EEEE">
+								<td>@client.LastName</td>
+								<td>@client.FirstName</td>
+								<td>@client.Hours</td>
+								<td>@client.Categories</td>
+							</tr>
+							totalHours += client.Hours;
+						}
+					}
+					<div>Total ore instructor: @totalHours</div> 
+					totalHours = 0;
+				}
+			</tbody>
+		</table>
+	</div>
+
+</div>
+
+
+
+@code {
+
+	DataAcces data = new DataAcces();
+
+	private List<InstructorInformation> instructors;
+	private List<ClientInformation> clients;
+
+	private int totalHours = 0;
+
+	protected override void OnInitialized()
+	{
+		instructors = data.GetInstructors();
+	}
+
+	public async Task GetClientInformationAsync()
+	{
+		clients = data.GetClients();
+		await Task.FromResult(clients);
+	}
+}
