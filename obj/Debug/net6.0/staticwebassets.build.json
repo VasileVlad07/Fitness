@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Xk9y2ykRkjALjIpjmQafuv1dSK0mUr1zmNw2eKJGFhw=",
+  "Hash": "RyE8xmxneT1DG+6MPrjBwU3RxPx2xok/+alQb2eSfXo=",
   "Source": "Fitness",
   "BasePath": "_content/Fitness",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "Fitness\\wwwroot",
       "Source": "Fitness",
-      "ContentRoot": "C:\\Users\\VLAD\\Desktop\\Proiect Gestiune Amenzi\\Fitness\\Fitness\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\VLAD\\Desktop\\Proiecte Vlad\\Fitness\\Fitness\\wwwroot\\",
       "BasePath": "_content/Fitness",
       "Pattern": "**"
     }
@@ -1632,10 +1632,10 @@
       "OriginalItemSpec": "C:\\Users\\VLAD\\.nuget\\packages\\syncfusion.blazor\\20.3.0.49\\staticwebassets\\styles\\tailwind-dark.css"
     },
     {
-      "Identity": "C:\\Users\\VLAD\\Desktop\\Proiect Gestiune Amenzi\\Fitness\\Fitness\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Fitness.styles.css",
+      "Identity": "C:\\Users\\VLAD\\Desktop\\Proiecte Vlad\\Fitness\\Fitness\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Fitness.styles.css",
       "SourceId": "Fitness",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\VLAD\\Desktop\\Proiect Gestiune Amenzi\\Fitness\\Fitness\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\VLAD\\Desktop\\Proiecte Vlad\\Fitness\\Fitness\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Fitness",
       "RelativePath": "Fitness.styles.css",
       "AssetKind": "All",
@@ -1646,13 +1646,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\VLAD\\Desktop\\Proiect Gestiune Amenzi\\Fitness\\Fitness\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Fitness.styles.css"
+      "OriginalItemSpec": "C:\\Users\\VLAD\\Desktop\\Proiecte Vlad\\Fitness\\Fitness\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Fitness.styles.css"
     },
     {
-      "Identity": "C:\\Users\\VLAD\\Desktop\\Proiect Gestiune Amenzi\\Fitness\\Fitness\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Fitness.bundle.scp.css",
+      "Identity": "C:\\Users\\VLAD\\Desktop\\Proiecte Vlad\\Fitness\\Fitness\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Fitness.bundle.scp.css",
       "SourceId": "Fitness",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\VLAD\\Desktop\\Proiect Gestiune Amenzi\\Fitness\\Fitness\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\VLAD\\Desktop\\Proiecte Vlad\\Fitness\\Fitness\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/Fitness",
       "RelativePath": "Fitness.bundle.scp.css",
       "AssetKind": "All",
@@ -1663,13 +1663,30 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\VLAD\\Desktop\\Proiect Gestiune Amenzi\\Fitness\\Fitness\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Fitness.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\VLAD\\Desktop\\Proiecte Vlad\\Fitness\\Fitness\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Fitness.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\VLAD\\Desktop\\Proiect Gestiune Amenzi\\Fitness\\Fitness\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\Users\\VLAD\\Desktop\\Proiecte Vlad\\Fitness\\Fitness\\wwwroot\\_Layout.cshtml",
       "SourceId": "Fitness",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\VLAD\\Desktop\\Proiect Gestiune Amenzi\\Fitness\\Fitness\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\VLAD\\Desktop\\Proiecte Vlad\\Fitness\\Fitness\\wwwroot\\",
+      "BasePath": "_content/Fitness",
+      "RelativePath": "_Layout.cshtml",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "wwwroot\\_Layout.cshtml"
+    },
+    {
+      "Identity": "C:\\Users\\VLAD\\Desktop\\Proiecte Vlad\\Fitness\\Fitness\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "SourceId": "Fitness",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\VLAD\\Desktop\\Proiecte Vlad\\Fitness\\Fitness\\wwwroot\\",
       "BasePath": "_content/Fitness",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -1683,10 +1700,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\VLAD\\Desktop\\Proiect Gestiune Amenzi\\Fitness\\Fitness\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\VLAD\\Desktop\\Proiecte Vlad\\Fitness\\Fitness\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "Fitness",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\VLAD\\Desktop\\Proiect Gestiune Amenzi\\Fitness\\Fitness\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\VLAD\\Desktop\\Proiecte Vlad\\Fitness\\Fitness\\wwwroot\\",
       "BasePath": "_content/Fitness",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -1700,10 +1717,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\VLAD\\Desktop\\Proiect Gestiune Amenzi\\Fitness\\Fitness\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Identity": "C:\\Users\\VLAD\\Desktop\\Proiecte Vlad\\Fitness\\Fitness\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "Fitness",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\VLAD\\Desktop\\Proiect Gestiune Amenzi\\Fitness\\Fitness\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\VLAD\\Desktop\\Proiecte Vlad\\Fitness\\Fitness\\wwwroot\\",
       "BasePath": "_content/Fitness",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "AssetKind": "All",
@@ -1717,10 +1734,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\VLAD\\Desktop\\Proiect Gestiune Amenzi\\Fitness\\Fitness\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Identity": "C:\\Users\\VLAD\\Desktop\\Proiecte Vlad\\Fitness\\Fitness\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "SourceId": "Fitness",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\VLAD\\Desktop\\Proiect Gestiune Amenzi\\Fitness\\Fitness\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\VLAD\\Desktop\\Proiecte Vlad\\Fitness\\Fitness\\wwwroot\\",
       "BasePath": "_content/Fitness",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
       "AssetKind": "All",
@@ -1734,10 +1751,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Identity": "C:\\Users\\VLAD\\Desktop\\Proiect Gestiune Amenzi\\Fitness\\Fitness\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Identity": "C:\\Users\\VLAD\\Desktop\\Proiecte Vlad\\Fitness\\Fitness\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "SourceId": "Fitness",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\VLAD\\Desktop\\Proiect Gestiune Amenzi\\Fitness\\Fitness\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\VLAD\\Desktop\\Proiecte Vlad\\Fitness\\Fitness\\wwwroot\\",
       "BasePath": "_content/Fitness",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
       "AssetKind": "All",
@@ -1751,10 +1768,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Identity": "C:\\Users\\VLAD\\Desktop\\Proiect Gestiune Amenzi\\Fitness\\Fitness\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Identity": "C:\\Users\\VLAD\\Desktop\\Proiecte Vlad\\Fitness\\Fitness\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "SourceId": "Fitness",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\VLAD\\Desktop\\Proiect Gestiune Amenzi\\Fitness\\Fitness\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\VLAD\\Desktop\\Proiecte Vlad\\Fitness\\Fitness\\wwwroot\\",
       "BasePath": "_content/Fitness",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
       "AssetKind": "All",
@@ -1768,10 +1785,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Identity": "C:\\Users\\VLAD\\Desktop\\Proiect Gestiune Amenzi\\Fitness\\Fitness\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Identity": "C:\\Users\\VLAD\\Desktop\\Proiecte Vlad\\Fitness\\Fitness\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "SourceId": "Fitness",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\VLAD\\Desktop\\Proiect Gestiune Amenzi\\Fitness\\Fitness\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\VLAD\\Desktop\\Proiecte Vlad\\Fitness\\Fitness\\wwwroot\\",
       "BasePath": "_content/Fitness",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
       "AssetKind": "All",
@@ -1785,10 +1802,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Identity": "C:\\Users\\VLAD\\Desktop\\Proiect Gestiune Amenzi\\Fitness\\Fitness\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Identity": "C:\\Users\\VLAD\\Desktop\\Proiecte Vlad\\Fitness\\Fitness\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "SourceId": "Fitness",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\VLAD\\Desktop\\Proiect Gestiune Amenzi\\Fitness\\Fitness\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\VLAD\\Desktop\\Proiecte Vlad\\Fitness\\Fitness\\wwwroot\\",
       "BasePath": "_content/Fitness",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
       "AssetKind": "All",
@@ -1802,10 +1819,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Identity": "C:\\Users\\VLAD\\Desktop\\Proiect Gestiune Amenzi\\Fitness\\Fitness\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Identity": "C:\\Users\\VLAD\\Desktop\\Proiecte Vlad\\Fitness\\Fitness\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "SourceId": "Fitness",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\VLAD\\Desktop\\Proiect Gestiune Amenzi\\Fitness\\Fitness\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\VLAD\\Desktop\\Proiecte Vlad\\Fitness\\Fitness\\wwwroot\\",
       "BasePath": "_content/Fitness",
       "RelativePath": "css/open-iconic/FONT-LICENSE",
       "AssetKind": "All",
@@ -1819,10 +1836,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\VLAD\\Desktop\\Proiect Gestiune Amenzi\\Fitness\\Fitness\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Identity": "C:\\Users\\VLAD\\Desktop\\Proiecte Vlad\\Fitness\\Fitness\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "SourceId": "Fitness",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\VLAD\\Desktop\\Proiect Gestiune Amenzi\\Fitness\\Fitness\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\VLAD\\Desktop\\Proiecte Vlad\\Fitness\\Fitness\\wwwroot\\",
       "BasePath": "_content/Fitness",
       "RelativePath": "css/open-iconic/ICON-LICENSE",
       "AssetKind": "All",
@@ -1836,10 +1853,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\ICON-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\VLAD\\Desktop\\Proiect Gestiune Amenzi\\Fitness\\Fitness\\wwwroot\\css\\open-iconic\\README.md",
+      "Identity": "C:\\Users\\VLAD\\Desktop\\Proiecte Vlad\\Fitness\\Fitness\\wwwroot\\css\\open-iconic\\README.md",
       "SourceId": "Fitness",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\VLAD\\Desktop\\Proiect Gestiune Amenzi\\Fitness\\Fitness\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\VLAD\\Desktop\\Proiecte Vlad\\Fitness\\Fitness\\wwwroot\\",
       "BasePath": "_content/Fitness",
       "RelativePath": "css/open-iconic/README.md",
       "AssetKind": "All",
@@ -1853,10 +1870,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
     },
     {
-      "Identity": "C:\\Users\\VLAD\\Desktop\\Proiect Gestiune Amenzi\\Fitness\\Fitness\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\VLAD\\Desktop\\Proiecte Vlad\\Fitness\\Fitness\\wwwroot\\css\\site.css",
       "SourceId": "Fitness",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\VLAD\\Desktop\\Proiect Gestiune Amenzi\\Fitness\\Fitness\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\VLAD\\Desktop\\Proiecte Vlad\\Fitness\\Fitness\\wwwroot\\",
       "BasePath": "_content/Fitness",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -1870,10 +1887,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\VLAD\\Desktop\\Proiect Gestiune Amenzi\\Fitness\\Fitness\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\VLAD\\Desktop\\Proiecte Vlad\\Fitness\\Fitness\\wwwroot\\favicon.ico",
       "SourceId": "Fitness",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\VLAD\\Desktop\\Proiect Gestiune Amenzi\\Fitness\\Fitness\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\VLAD\\Desktop\\Proiecte Vlad\\Fitness\\Fitness\\wwwroot\\",
       "BasePath": "_content/Fitness",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -1887,10 +1904,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\VLAD\\Desktop\\Proiect Gestiune Amenzi\\Fitness\\Fitness\\wwwroot\\Image\\AppImage.png",
+      "Identity": "C:\\Users\\VLAD\\Desktop\\Proiecte Vlad\\Fitness\\Fitness\\wwwroot\\Image\\AppImage.png",
       "SourceId": "Fitness",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\VLAD\\Desktop\\Proiect Gestiune Amenzi\\Fitness\\Fitness\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\VLAD\\Desktop\\Proiecte Vlad\\Fitness\\Fitness\\wwwroot\\",
       "BasePath": "_content/Fitness",
       "RelativePath": "Image/AppImage.png",
       "AssetKind": "All",
@@ -1904,10 +1921,10 @@
       "OriginalItemSpec": "wwwroot\\Image\\AppImage.png"
     },
     {
-      "Identity": "C:\\Users\\VLAD\\Desktop\\Proiect Gestiune Amenzi\\Fitness\\Fitness\\wwwroot\\Script.js",
+      "Identity": "C:\\Users\\VLAD\\Desktop\\Proiecte Vlad\\Fitness\\Fitness\\wwwroot\\Script.js",
       "SourceId": "Fitness",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\VLAD\\Desktop\\Proiect Gestiune Amenzi\\Fitness\\Fitness\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\VLAD\\Desktop\\Proiecte Vlad\\Fitness\\Fitness\\wwwroot\\",
       "BasePath": "_content/Fitness",
       "RelativePath": "Script.js",
       "AssetKind": "All",

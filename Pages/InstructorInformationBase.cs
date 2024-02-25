@@ -11,7 +11,7 @@ namespace InstructorInformationBase
     public class InstructorInformationBase : ComponentBase
     {
         public InstructorInformation InstructorInformation { get; set; }
-
+ 
         private const int maxHours = 20;
         private static bool removed = true;
         private static bool saved = false;

@@ -2841,11 +2841,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\VLAD\\Desktop\\Proiect Gestiune Amenzi\\Fitness\\Fitness\\Fitness.csproj",
+      "projectUniqueName": "C:\\Users\\VLAD\\Desktop\\Proiecte Vlad\\Fitness\\Fitness\\Fitness.csproj",
       "projectName": "Fitness",
-      "projectPath": "C:\\Users\\VLAD\\Desktop\\Proiect Gestiune Amenzi\\Fitness\\Fitness\\Fitness.csproj",
+      "projectPath": "C:\\Users\\VLAD\\Desktop\\Proiecte Vlad\\Fitness\\Fitness\\Fitness.csproj",
       "packagesPath": "C:\\Users\\VLAD\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\VLAD\\Desktop\\Proiect Gestiune Amenzi\\Fitness\\Fitness\\obj\\",
+      "outputPath": "C:\\Users\\VLAD\\Desktop\\Proiecte Vlad\\Fitness\\Fitness\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\VLAD\\AppData\\Roaming\\NuGet\\NuGet.Config",

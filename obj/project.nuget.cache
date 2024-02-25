@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sNt5w/sdyAKV3JVK5fX8DaB/vlByAWrBJgq60c9cZEzC7GACjeTv6EacH+JnoJ5VItqjVLHCm5IbQTG+uxHudQ==",
+  "dgSpecHash": "79JHBpWYuZFRUl6GC545WKN8DokDVvd13wVFi87ZK+jVnChqxlumqONIoPkfZvNfDKEKy3DqSozDIw8so2DoCQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\VLAD\\Desktop\\Proiect Gestiune Amenzi\\Fitness\\Fitness\\Fitness.csproj",
+  "projectFilePath": "C:\\Users\\VLAD\\Desktop\\Proiecte Vlad\\Fitness\\Fitness\\Fitness.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\VLAD\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\VLAD\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.5\\microsoft.aspnetcore.authorization.6.0.5.nupkg.sha512",

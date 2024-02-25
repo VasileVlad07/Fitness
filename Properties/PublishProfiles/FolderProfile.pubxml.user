@@ -4,8 +4,8 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 -->
 <Project>
   <PropertyGroup>
-    <_PublishTargetUrl>C:\Users\VLAD\Desktop\Proiect Gestiune Amenzi\Fitness\Fitness\bin\Release\net6.0\publish\</_PublishTargetUrl>
-    <History>True|2022-11-10T11:48:52.0567758Z;</History>
+    <_PublishTargetUrl>C:\Users\VLAD\Desktop\Proiecte Vlad\Fitness\Fitness\bin\Release\net6.0\publish\</_PublishTargetUrl>
+    <History>True|2024-02-08T18:57:22.0732739Z;True|2022-11-10T13:48:52.0567758+02:00;</History>
     <LastFailureDetails />
   </PropertyGroup>
 </Project>
