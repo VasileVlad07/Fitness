@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "kppTn+h5/pLodCVlFa8bhspacMIuWY+Zqupo6jn6Veo=",
+  "Hash": "1OXQmCiLmgYWnAQlLUhsRjTCeZCpTIlxb0LvH6FEg1M=",
   "Source": "Fitness",
   "BasePath": "_content/Fitness",
   "Mode": "Default",
@@ -1664,6 +1664,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\VLAD\\Desktop\\Proiecte Vlad\\Fitness\\Fitness\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\Fitness.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\VLAD\\Desktop\\Proiecte Vlad\\Fitness\\Fitness\\wwwroot\\_Layout.cshtml",
+      "SourceId": "Fitness",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\VLAD\\Desktop\\Proiecte Vlad\\Fitness\\Fitness\\wwwroot\\",
+      "BasePath": "_content/Fitness",
+      "RelativePath": "_Layout.cshtml",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "wwwroot\\_Layout.cshtml"
     },
     {
       "Identity": "C:\\Users\\VLAD\\Desktop\\Proiecte Vlad\\Fitness\\Fitness\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
